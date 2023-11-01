@@ -27,7 +27,7 @@ root.attributes('-topmost', True)
 root.bind('<Button-1>', SaveLastClickPos)
 root.bind('<B1-Motion>', Dragging)
 root.configure(background='black')
-root.title("PineconeTimerV1.3")
+root.title("PineconeTimerV1.4")
 
 #Time and Date logic
 def my_time(): 
@@ -40,7 +40,7 @@ def my_time():
 def my_date():
     l2=tk.Label(root,font=my_fontdate,bg='black',fg='#0f0',anchor='s')
     l2.grid(row=1,column=0,padx=0,pady=0)
-    date_string = strftime(' %A %B %d %Y ')
+    date_string = strftime(' %A, %B %d, %Y ')
     l2.config(text=date_string)
     
 #Right click menu

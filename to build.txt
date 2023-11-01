@@ -1,1 +1,1 @@
-python -m nuitka --standalone --follow-imports --mingw64 --remove-output --assume-yes-for-downloads --show-progress --windows-disable-console --windows-icon-from-ico=pineconetimer.ico pineconetimer.py
+python -m nuitka --standalone --follow-imports --mingw64 --remove-output --assume-yes-for-downloads --show-progress --windows-disable-console --enable-plugin=tk-inter --windows-icon-from-ico=pineconetimer.ico pineconetimer.py
