@@ -6,8 +6,8 @@ from time import strftime
 lastClickX = 0
 lastClickY = 0
 
-my_fonttime=('arial',60,'bold') # display size and style
-my_fontdate=('arial',20,'bold') # display size and style
+my_fonttime=('arial',40,'bold') # display size and style
+my_fontdate=('arial',15,'bold') # display size and style
 
 def SaveLastClickPos(event):
     global lastClickX, lastClickY
@@ -26,7 +26,7 @@ root.attributes('-topmost', True)
 root.bind('<Button-1>', SaveLastClickPos)
 root.bind('<B1-Motion>', Dragging)
 root.configure(background='black')
-root.title("PineconeTimer V1")
+root.title("PineconeTimer V1.1")
 #img = PhotoImage(file='pineconetimer.ico')
 #root.tk.call('wm', 'iconphoto', root._w, img)
 
